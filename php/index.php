@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Send me a message</title>
 </head>
 <body>
@@ -50,7 +50,7 @@
             <div class="decorator four">        
             </div>
         </section>
-        <script src="index.js"></script>
+        <script src="../src/index.js"></script>
 
     </main>
 </body>

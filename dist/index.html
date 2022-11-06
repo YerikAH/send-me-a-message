@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Send me a message</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-relative">
+        <form
+          action="https://formsubmit.co/yerik05vh@gmail.com"
+          method="POST"
+          class="form-glass"
+        >
+          <h1 class="title-send-message">Send me a message!</h1>
+          <p class="instruction-message">
+            When you send your message, the message arrives in Harvey's mailbox
+          </p>
+          <div class="input-space">
+            <label class="label-input" for="nameInput">Enter your name:</label>
+            <input
+              class="input-text"
+              type="text"
+              id="nameInput"
+              name="Name"
+              required
+            />
+            <span class="error-catch"
+              >You cannot enter more than 20 characters.</span
+            >
+          </div>
+          <div class="input-space">
+            <label class="label-input" for="emailInput"
+              >Enter your email:</label
+            >
+            <input
+              class="input-text"
+              type="email"
+              name="Email"
+              id="emailInput"
+              required
+            />
+            <span class="error-catch"></span>
+          </div>
+          <div class="input-space">
+            <label class="label-input" for="titleInput">Enter the title:</label>
+            <input
+              class="input-text"
+              type="text"
+              name="_subject"
+              id="titleInput"
+              required
+            />
+            <span class="error-catch"></span>
+          </div>
+          <div class="input-space">
+            <label class="label-input" for="messageInput"
+              >Enter your message:</label
+            >
+            <textarea
+              name="Message"
+              id="messageInput"
+              class="textarea-input input-text"
+              maxlength="255"
+              required
+            ></textarea>
+            <span class="error-catch"></span>
+            <span class="span-max-length">
+              max length:
+              <i id="maxLengthMessage">255</i>
+            </span>
+          </div>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="../php/sendok.php" />
+          <input type="submit" value="Submit message" class="input-submit" />
+        </form>
+        <div class="decorator one"></div>
+        <div class="decorator two"></div>
+        <div class="decorator three"></div>
+        <div class="decorator four"></div>
+      </section>
+      <script src="../src/index.js"></script>
+    </main>
+  </body>
+</html>

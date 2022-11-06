@@ -68,6 +68,14 @@ function validateInputs(e, regex, number, inputAbout, messageRegex) {
   let countLetter = e.target.value.length;
   let errorCatch = e.target.nextElementSibling;
   console.log(countLetter, errorCatch);
+  console.log(e.target.value);
+  if (e.target.value === "" || e.target.value === " ") {
+    errorCatch.textContent = `You cannot leave the ${inputAbout} field empty.`;
+    errorCatch.classList.toggle("active-error");
+    e.target.classList.toggle("active-error-decorator");
+  } else {
+    verificationError(e, errorCatch);
+  }
   if (countLetter == 0) {
     errorCatch.textContent = `You cannot leave the ${inputAbout} field empty.`;
     errorCatch.classList.toggle("active-error");
