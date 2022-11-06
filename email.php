@@ -34,7 +34,7 @@ function submitEmail(){
             // $mail->Password   = '';  your pass, send me a message           
             $mail->Port       = 587;     
 
-            $mail->setFrom('yerikah05note@outlook.es', 'Send a message');
+            // $mail->setFrom('', 'Send a message'); your email
             $mail->addAddress('yerik05vh@gmail.com', 'Harvey Yerik');  
             $mail->isHTML(true);               
             $mail->Subject = $title;
