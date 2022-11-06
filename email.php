@@ -30,8 +30,8 @@ function submitEmail(){
             $mail->isSMTP();                                        
             $mail->Host       = 'smtp.office365.com';                     
             $mail->SMTPAuth   = true;                               
-            $mail->Username   = 'yerikah05note@outlook.es';                     
-            $mail->Password   = 'VAgYS2A853LfHbQ';            
+            // $mail->Username   = '';  your username                    
+            // $mail->Password   = '';  your pass, send me a message           
             $mail->Port       = 587;     
 
             $mail->setFrom('yerikah05note@outlook.es', 'Send a message');
